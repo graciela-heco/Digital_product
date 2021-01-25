@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+
+/* variables */
+:root{
+  --purple-color:#6e25c3;
+  --pink-color:#f06cbd;
+  --white-color:#ffffff;
+  --black-color:#000000;
+  --blue-color:#30bdde;
+  /* Tipografía */
+  --normal:14px;
+  /* Espaciado */
+  --space:10px;
+  /* Box shadow */
+  --box: 1px 1px 8px 0px #f3f1f1de;
+}
+/* terminan variables */
+
+html, body{
+  padding:0px;
+  margin:0px;
+  font-size: var(--normal);
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--white-color);
+}
+
+nav{
+  display: flex;
+  background-color: var(--purple-color);
+  padding: var(--space);
+  color: var(--white-color);
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav li{
+  padding-left: 20px;
+  list-style: none;
+}
+
+nav li a{
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+nav li a:hover{
+  color: var(--pink-color);
+}
+
+footer a{
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: var(--purple-color);
+}
+
+label {
+  font-size: var(--normal);
+  color: var(--white-color);
+  padding-bottom: 5px;
+}
+
+
+/* Title */
+.title_faqs{
+  padding-top: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 2%;
+  text-align: center;
+  color: var(--black-color);
+}
+/* aquí acaba Title */
+
+/* aquí comienzan las faqs */
+.faqs_questions {
+  color: var(--black-color);
+  font-size: var(--normal);
+  font-weight: bold;
+  text-align: left;
+  padding-top: 2%;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: -10px;
+  display: flex;
+}
+
+.faqs_answers {
+  color: var(--black-color);
+  font-size: var(--normal);
+  font-weight: normal;
+  text-align: left;
+  padding-top: -10px;
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-bottom: 2%;
+  display: flex;
+}
+
+/* Aquí acaba faqs */
+
+
+
+/* Aquí comienza el footer */
+.pre_footer {
+  display: flex;
+  background-color: var(--black-color);
+  padding-top: 200px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 400px;
+}
+
+.footer_text {
+  display: flex;
+  padding: 2%;
+  font-size: var(--normal);
+  background-color: var(--pink-color);
+  color: var(--white-color);
+  text-align: left;
+}
+
+/* Aquí termina footer */
+
+
+
+
+
+/* Aquí comienza la sección de contáctenos  */
+.contact_section{
+  padding: 10%;
+  text-align: center;
+  color: var(--black-color);
+  justify-content: space-between;
+}
+
+.contact_form{
+  padding: 5%;
+  text-align: left;
+  color: var(--black-color);
+  justify-content:  flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  align-self: flex-start;
+  display: flex;
+}
+
+.contact_image {
+  display: flex;
+  text-align: center;
+}
+
+/* Aquí termina la sección de contacto */
+
+
+
+
+
+
+/* Aquí comienza la sección de venta */
+
+.title_venta {
+  color: var(--blue-color);
+  text-align: center;
+  padding: var(--space);
+}
+
+.modulo_pago {
+  color: var(--white-color);
+  text-align: left;
+  padding: var(--space);
+  margin: auto;
+}
+
+.data {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  margin-top: var(--space);
+  box-sizing: border-box;
+  width: 100%;
+  height: 25px;
+  border-radius: 4px;
+  border: 1px solid var(--white-color);
+}
+
+
+/* Aquí termina la sección de venta */
+
+
+@media (max-width:800px) {
+  .contact_image {
+    text-align: center;
+  }
+
+}

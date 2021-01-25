@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+
+/* variables */
+:root{
+  --purple-color:#6e25c3;
+  --pink-color:#f06cbd;
+  --white-color:#ffffff;
+  --black-color:#000000;
+  --blue-color:#30bdde;
+  /* Tipografía */
+  --normal:14px;
+  /* Espaciado */
+  --space:10px;
+  /* Box shadow */
+  --box: 1px 1px 8px 0px #f3f1f1de;
+}
+/* terminan variables */
+
+html, body{
+  padding:0px;
+  margin:0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: var(--normal);
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  background-color: var(--white-color);
+  color: var(--blue-color);
+}
+
+a{
+  color: var(--blue-color);
+  text-decoration: none;
+}
+
+a:hover{
+  color: var(--purple-color);
+}
+
+.content_paypal {
+  text-decoration: none;
+}

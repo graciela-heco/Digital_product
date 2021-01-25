@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+
+/* variables */
+:root{
+  --purple-color:#6e25c3;
+  --pink-color:#f06cbd;
+  --white-color:#ffffff;
+  --black-color:#000000;
+  --blue-color:#30bdde;
+  /* Tipografía */
+  --normal:14px;
+  /* Espaciado */
+  --space:10px;
+  /* Box shadow */
+  --box: 1px 1px 8px 0px #f3f1f1de;
+}
+/* terminan variables */
+
+html, body{
+  padding:0px;
+  margin:0px;
+  font-size: var(--normal);
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--black-color);
+}
+
+nav{
+  display: flex;
+  background-color: var(--purple-color);
+  padding: var(--space);
+  color: var(--white-color);
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav li{
+  padding-left: 20px;
+  list-style: none;
+}
+
+nav li a{
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+nav li a:hover{
+  color: var(--pink-color);
+}
+
+footer a{
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+footer a:hover{
+  color: var(--purple-color);
+}
+
+label {
+  font-size: var(--normal);
+  color: var(--white-color);
+  padding-bottom: 5px;
+}
+
+
+
+/* Main section */
+.main_section{
+  padding: 10%;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--black-color);
+}
+/* aquí acaba main section */
+
+/* productos */
+.products {
+  background-image: url("../images/triangulo_gris2x.png");
+  height: 100px;
+  background-size: cover;
+  background-position: center top;
+  padding: 21.5%;
+  background-color: var(--black-color);
+  display: flex;
+}
+
+.product {
+  padding: 30px;
+  margin-top: -270px;
+}
+
+.product .content{
+  color: var(--black-color);
+  background-color: var(--white-color);
+  padding: 15px;
+  box-shadow: var(--box);
+}
+
+.img_content {
+  text-align: center;
+}
+
+.main_button {
+  background-color: var(--purple-color);
+  color: var(--white-color);
+  width: 100%;
+  padding: 8px;
+  font-size: var(--normal);
+  border: 0;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.main_button:hover {
+  background-color: #3b0777;
+}
+/* Aquí acaba productos */
+
+/* Aquí comienzan beneficios */
+.beneficios {
+  padding: 80px;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--black-color);
+}
+
+.benefits{
+  padding: 10%;
+  background-color: var(--black-color);
+  display: flex;
+}
+
+.benefit{
+  padding: 20px;
+  margin-top: -5%;
+  justify-content: space-around;
+}
+
+.text_benefit {
+  color: var(--white-color);
+  text-align: center;
+}
+
+
+.img_benefits {
+  text-align: center;
+  height: 180px
+}
+
+/* Aquí termina beneficios  */
+
+/* Aquí comienza usuarios y reseñas */
+.resenas {
+  padding: 80px;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--black-color);
+}
+
+.reviews {
+  max-height: 50px;
+  padding: 10%;
+  background-color: var(--black-color);
+  display: flex;
+}
+
+.review {
+  background-color: var(--black-color);
+  padding-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 95px;
+  margin-top: -130px;
+}
+
+.img_reviews {
+  background-color: var(--black-color);
+  text-align: center;
+}
+
+.text_review{
+  background-color: var(--black-color);
+  padding: var(--space);
+  color: var(--white-color);
+  text-align: center;
+}
+
+/* Aquí termina usuarios y reseñas */
+
+/* Aquí comienza el footer */
+.pre_footer {
+  display: flex;
+  background-color: var(--black-color);
+  padding-top: 200px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 400px;
+}
+
+.footer_text {
+  display: flex;
+  padding: 2%;
+  font-size: var(--normal);
+  background-color: var(--pink-color);
+  color: var(--white-color);
+  text-align: left;
+}
+
+/* Aquí termina footer */
+
+
+/* Aquí comienza la sección de venta */
+
+.title_venta {
+  color: var(--blue-color);
+  text-align: center;
+  padding: var(--space);
+}
+
+.modulo_pago {
+  color: var(--white-color);
+  text-align: left;
+  padding: var(--space);
+  margin: auto;
+}
+
+.data {
+  background-color: var(--black-color);
+  color: var(--white-color);
+  margin-top: var(--space);
+  box-sizing: border-box;
+  width: 100%;
+  height: 25px;
+  border-radius: 4px;
+  border: 1px solid var(--white-color);
+}
+
+
+/* Aquí termina la sección de venta */

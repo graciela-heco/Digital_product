@@ -1,0 +1,204 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap');
+
+/* variables */
+:root{
+  --purple-color:#6e25c3;
+  --pink-color:#f06cbd;
+  --white-color:#ffffff;
+  --black-color:#000000;
+  --blue-color:#30bdde;
+  /* Tipografía */
+  --normal:14px;
+  /* Espaciado */
+  --space:10px;
+  /* Box shadow */
+  --box: 1px 1px 8px 0px #f3f1f1de;
+}
+/* terminan variables */
+
+
+.container{
+    color: var(--white-color);
+    max-width: 800px;
+    margin: auto;
+}
+
+.row{
+    color: var(--white-color);
+    display: flex;
+}
+
+.col-1{
+  width: 8.3%;
+}
+
+.col-2 {
+  width: 16.6%;
+}
+
+.col-3 {
+  width: 24.9%;
+}
+
+.col-4 {
+  width: 33.2%;
+}
+
+.col-4-m {
+  width: 33.2%;
+}
+
+.col-5 {
+  width: 41.5%;
+}
+
+.col-6 {
+  width: 49.8%;
+}
+
+.col-7 {
+  width: 58.1%;
+}
+
+.col-8 {
+  width: 66.4%;
+}
+.col-9 {
+  width: 74.7%;
+}
+
+.col-10 {
+  width: 83%;
+}
+
+.col-11 {
+  width: 91.3%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-1, .col-2, .col-3,  .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+  padding: 10px;
+}
+
+.imagen_grids {
+  text-align: left;
+}
+
+.title_grids {
+  color: var(--blue-color);
+  font-weight: bold;
+  text-align: right;
+  font-size: 20px;
+}
+
+.text_grids {
+  color: var(--white-color);
+  text-align: right;
+  font-size: var(--normal);
+}
+
+.button_grids {
+  background-color: var(--white-color);
+  color: var(--blue-color);
+  width: 100%;
+  padding: 10px;
+  font-size: var(--normal);
+  font-weight: bold;
+  border: 0;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.intergrid_space {
+  padding: 6%;
+  display: flex;
+}
+
+.imagen2_grids {
+  text-align: right;
+}
+
+.title2_grids {
+  color: var(--pink-color);
+  font-weight: bold;
+  text-align: left;
+  font-size: 20px;
+}
+
+.text2_grids {
+  color: var(--white-color);
+  text-align: left;
+  font-size: var(--normal);
+}
+
+@media (max-width:800px) {
+  .row {
+    display: inherit;
+  }
+  .col-1, .col-2, .col-3,  .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    padding: 30px;
+    width: 90%;
+  }
+
+.col-4-m {
+  padding: 0px;
+  width: 0%;
+}
+
+  .imagen_grids {
+    text-align: center;
+  }
+
+  .title_grids {
+    text-align: center;
+    padding-top: 0%;
+    padding-bottom: 1%;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .text_grids {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .button_grids {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .imagen2_grids {
+    text-align: center;
+  }
+
+  .title2_grids {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .text2_grids {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+
+  .intergrid_space {
+    display: inherit;
+    padding: 15%;
+  }
+
+}
+
+ /* container > row > column */
